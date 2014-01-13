@@ -9,5 +9,6 @@
     <string name="twenty_percent">20%</string>
     <string name="hint_enter_tip">Enter tip amount</string>
     <string name="tip_amount_empty">"Tip is: "</string>
+    <string name="invalid_tip_amount">The bill amount is invalid. Please make sure the bill is at least greather than 0</string>
 
 </resources>

@@ -57,8 +57,12 @@ public class TipCalculatorActivity extends Activity {
     	double tipAmount = TipCalculatorHelper.calculateTip(billAmount, tipPercentage);
     	
     	// Format the tip to be display to the user
-    	tvTipAmount.setText(R.string.tip_amount_empty);
-    	tvTipAmount.append(" $" + String.format("%.2f", tipAmount));
+    	if (tipAmount >0) {
+	    	tvTipAmount.setText(R.string.tip_amount_empty);
+	    	tvTipAmount.append(" $" + String.format("%.2f", tipAmount));
+    	} else {
+    		tvTipAmount.setText(R.string.invalid_tip_amount);
+    	}
     	
     }
     
