@@ -7,9 +7,17 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+/**
+ * Activity Class for the TipCalculator App
+ * @author CŽdric Lignier <cedric.lignier@free.fr>
+ *
+ */
 public class TipCalculatorActivity extends Activity {
 
+	// The EditText that contain the amount of the bill
 	private EditText etBillAmount;
+	
+	// The TextView that display the amount of the tip
 	private TextView tvTipAmount;
 	    	
     @Override
@@ -47,8 +55,10 @@ public class TipCalculatorActivity extends Activity {
     	}
     	
     	double tipAmount = TipCalculatorHelper.calculateTip(billAmount, tipPercentage);
+    	
+    	// Format the tip to be display to the user
     	tvTipAmount.setText(R.string.tip_amount_empty);
-    	tvTipAmount.append(" $" + tipAmount);
+    	tvTipAmount.append(" $" + String.format("%.2f", tipAmount));
     	
     }
     

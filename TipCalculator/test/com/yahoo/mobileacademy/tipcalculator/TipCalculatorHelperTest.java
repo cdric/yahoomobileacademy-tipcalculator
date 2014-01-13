@@ -2,6 +2,11 @@ package com.yahoo.mobileacademy.tipcalculator;
 
 import junit.framework.TestCase;
 
+/**
+ * Unit tests for the public methods of the TipCalculatorHelp utlity class
+ * @author CŽdric Lignier <cedric.lignier@free.fr>
+ *
+ */
 public class TipCalculatorHelperTest extends TestCase {
 
 	public void testCalculateTip() {
