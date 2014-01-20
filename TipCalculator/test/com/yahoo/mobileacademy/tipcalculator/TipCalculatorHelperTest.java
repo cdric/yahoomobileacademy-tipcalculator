@@ -3,7 +3,7 @@ package com.yahoo.mobileacademy.tipcalculator;
 import junit.framework.TestCase;
 
 /**
- * Unit tests for the public methods of the TipCalculatorHelp utlity class
+ * Unit tests for the public methods of the TipCalculatorHelp utility class
  * @author CŽdric Lignier <cedric.lignier@free.fr>
  *
  */
